@@ -63,6 +63,7 @@ namespace Database
 
                     this._alServes.Add(sd);
                 }
+				reader.Close();
             }
             else
             {
