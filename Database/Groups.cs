@@ -89,6 +89,7 @@ namespace Database
 
                     this._alGroups.Add(gd);
                 }
+				reader.Close();
             }
             else
             {
@@ -211,6 +212,7 @@ namespace Database
             {
                 reader.Read();
                 ret = reader["group_name"].ToString();
+				reader.Close();
             }
             else
             {
@@ -239,6 +241,7 @@ namespace Database
             {
                 reader.Read();
                 ret = int.Parse(reader["groupid"].ToString());
+				reader.Close();
             }
             else
             {
@@ -271,6 +274,7 @@ namespace Database
 
                     this._alGroups.Add(gd);
                 }
+				reader.Close();
             }
             else
             {
